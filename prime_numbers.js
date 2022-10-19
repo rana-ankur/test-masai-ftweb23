@@ -1,13 +1,20 @@
 let n=11,flag=0;
-for (let index = 2; index <=n; index++) {
-  flag=0;
-  for (let indexi = 2; indexi <index; indexi++) {
-   if((index%indexi===0))
-  {
+
+for (let index = 1; index <=n; index++) {
+
+   if((n%index===0)){
+
     flag++;
+
   }
-   
-  }
-  
-  
+
+}
+
+if(flag>2){
+
+  console.log(" not prime");
+
+}else{
+
+  console.log("prime");
 }
